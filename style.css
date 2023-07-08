@@ -1,0 +1,169 @@
+:root{
+  --ff: 'DM Sans', sans-serif;
+  --colorp: #333;
+  --colors: #fff;
+  --colora: #999;
+  --h2: bold 36px/36px var(--ff);
+  --h3: bold 18px/18px var(--ff);
+  --p: regular 16px/16px var(--ff);
+}
+footer{
+  margin: 40px 0px;
+}
+header{
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button{
+  font-family: var(--ff);
+}
+#resetButton{
+  border: none;
+  background-color: var(--colorp);
+  color: var(--colors);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-shadow: #00000070 0px 0px 20px 0px;
+  border-radius: 2px;
+}
+#resetButton:hover{
+  background-color: var(--colors);
+  color: var(--colorp);
+  transition: ease-in-out .2s;}
+  
+#inputCity{
+  width: 170px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+  box-shadow: #00000070 0px 0px 20px 0px;
+}
+.error{
+  margin-top: 10px;
+}
+
+#submitButton{
+  border: none;
+  background-color: var(--colors);
+  color: var(--colorp);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-shadow: #00000070 0px 0px 20px 0px;
+  border-radius: 2px;
+}
+#submitButton:hover{
+  background-color: var(--colora);
+  color: var(--colorp);
+  transition: ease-in-out .2s;
+}
+
+body{
+  width: 90%;
+  margin: auto;
+  font-family: var(--ff);
+  background-color: var(--colorp);
+  color: var(--colors);
+  scroll-behavior: smooth;
+}
+
+.ux{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+}
+
+#resultContainer{
+  margin: 40px 0px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+p{
+  font: var(--p);
+  margin: 0px;
+}
+h3{
+  font: var(--h3);
+  margin: 4px 0px 4px 0px;
+  
+}
+h2{
+  font: var(--h2);
+  margin: 20px 0px 4px 0px;
+  
+}
+
+
+
+p{
+  
+  color: var(--colora);
+}
+a{
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--colors);
+}
+a:hover{
+  color: var(--colora);
+  transition: ease-in-out .2s;
+}
+.card{
+  padding: 20px;
+  box-shadow: #00000070 0px 0px 20px 0px;
+  border-radius: 10px;
+  min-width: 150px;
+  height: 150px;
+  flex: 1;
+  position: relative;
+}
+
+
+.removeCard{
+  color: var(--colora);
+font-weight: bold;
+height: 30px;
+width: 30px;
+position: absolute;
+top: 5px;
+right: 5px;
+border: none;
+border-radius: 15px;
+background-color: transparent;
+cursor: pointer;
+}
+.removeCard:hover{
+  color: var(--colorp);
+background-color: var(--colors);
+transition: ease-in-out .2s;
+}
+
+.autocomplete-items {
+  color: var(--colorp);
+  position: absolute;
+  top: 40px;
+  border: none;
+  z-index: 99;
+  width: 190px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--colors);
+  border-bottom: 1px solid var(--colorp);
+}
+
+.autocomplete-active {
+  background-color: var(--colorp) !important;
+  color: var(--colors);
+}

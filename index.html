@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CT500</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.1.1/luxon.min.js"></script>
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href=""><h3>CT500</h3></a>
+      </div>
+
+      <button id="resetButton">Reset</button>
+    </header>
+    <p>Realtime temperature of 500 cities.</p>
+
+    <form id="cityForm" class="ux">
+      <input
+        type="text"
+        id="inputCity"
+        placeholder="Add a city of your choice"
+      />
+      <button type="submit" id="submitButton">Add City</button>
+
+      <p class="error"></p>
+    </form>
+
+    <div id="resultContainer"></div>
+  </body>
+</html>
