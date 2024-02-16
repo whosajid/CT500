@@ -9,5 +9,3 @@ This was my first JavaScript project, so I learned a lot of JavaScript concepts 
 To fetch the real time weather I am using OpenWeatherAPI. and local storage to save the user generated cities.
 
 The responsive card layout is achieved in CSS using flexbox. I added some hover and active state in the design to keep the App visually interactive.
-
-Checkout the App https://www.iamsajid.com/App/CT500
